@@ -1,133 +1,139 @@
+# 🤖 SNOM - AI Robot Buddy for Neurodiverse Children
 
-SNOM - AI Robot Buddy for Neurodiverse Children
-🚀 About
-SNOM is an emotionally intelligent AI-powered robotic companion designed to support neurodiverse children, such as those with autism, in developing social skills, emotional understanding, and confidence. Built to act as a best friend, SNOM follows children around, engages in adaptive conversations, and provides a safe, non-judgmental presence.
+## 🚀 About
 
-Developed for Bitcamp 2025, SNOM combines cutting-edge technology with empathy to empower children and provide peace of mind to parents.
+**SNOM** is an emotionally intelligent, AI-powered robotic companion designed to support neurodiverse children—especially those with autism—in developing social skills, emotional understanding, and self-confidence.
 
-💡 Inspiration
-The silent struggles of neurodiverse children — navigating a world that feels confusing and isolating — and the unspoken pain of parents unable to help inspired us to act. We wanted to create a tool that transforms these challenges into moments of growth, connection, and empowerment.
+Built to act as a best friend, SNOM follows children around, engages in adaptive conversations, and provides a safe, non-judgmental presence throughout their day.
 
-SNOM is born from empathy and the belief that every child deserves a friend who truly understands them.
+Developed at **Bitcamp 2025**, SNOM blends cutting-edge tech with deep empathy to empower children and give parents peace of mind.
 
-⚙️ What it does
-SNOM is an interactive robotic companion that:
+---
 
-Autonomously follows children using computer vision, ensuring companionship and safety.
-Maintains optimal conversation distance through real-time calculations.
-Engages in natural conversations powered by Gemini 2.0 Flash, tailored to the child’s mood and personality.
-Displays emotions visually on a screen to enhance social connection.
-Responds with voice feedback using text-to-speech technology to encourage interaction.
-Navigates independently to find and approach users while avoiding obstacles.
-Supports emotional growth by helping children understand and express their feelings.
-🔧 How We Built It
-Hardware
-Raspberry Pi 5: Acts as the brain of SNOM, coordinating all hardware and software components.
-Modified RC car chassis: Provides mobility and smooth navigation.
-Camera module: Enables vision processing for person detection and tracking.
-Bluetooth speaker: Delivers clear, friendly voice responses.
-Display screen: Shows emotions visually to enhance communication.
-Software
-Vision System: OpenCV for person detection, distance calculation, and tracking.
-Control System: RPI.GPIO for interfacing with the RC car’s motor controls.
-Conversation AI: Gemini 2.0 Flash for natural language processing and adaptive conversations.
-Speech: PyTTS for text-to-speech conversion, ensuring SNOM’s voice feels relatable.
-Emotion Display: HTML/CSS/JavaScript frontend connected to a Flask server for displaying emotions.
-Integration: Python scripts for seamless coordination of all systems.
-How TerpAI Helped Us
-Fine-tuned AI models for emotional intelligence.
-Built personalized personas for children based on their interests and sensitivities.
-Identified key challenges faced by neurodiverse children and parents to guide solution development.
-Supported the creation of an empathetic, impactful design.
-Assisted in developing a strong business plan for future scalability.
-🏆 Challenges We Ran Into
-First-Time Hardware Hack: Building a hardware-based project as computer science majors was a steep learning curve.
-Reverse Engineering: Disassembling and analyzing an RC car to integrate our own controls without damaging functionality.
-Power Management: Optimizing power distribution for multiple components running simultaneously.
-Autonomous Navigation: Developing reliable algorithms for user tracking and obstacle avoidance.
-Latency Reduction: Minimizing delays between vision processing, decision-making, and motor control.
-Audio Clarity: Ensuring SNOM’s speech remained clear and audible across various environments.
-✅ Accomplishments That We’re Proud Of
-Successfully reverse-engineered and repurposed a commercial RC car for AI-powered autonomy.
-Created a fully integrated system combining vision, speech, movement, and emotional display.
-Developed efficient distance-maintaining algorithms for optimal conversation interaction.
-Achieved natural-feeling conversational interactions using Gemini 2.0 Flash.
-Built a tool that genuinely connects with neurodiverse children, fostering confidence and emotional growth.
-📚 What We Learned
-Mastered hardware-software integration techniques.
-Improved skills in real-time computer vision processing on resource-constrained devices.
-Developed effective strategies for human-robot interaction design.
-Optimized power and performance for mobile robotic platforms.
-Learned the importance of empathy-driven design for impactful solutions.
-🔮 What’s Next for SNOM
-Global Reach: Scaling SNOM to make him accessible to families worldwide.
-Advanced Personalization: Refining SNOM’s ability to adapt to unique personalities and interests.
-Therapeutic Integration: Collaborating with educators and therapists to revolutionize support for neurodiverse children.
-Activity Recognition: Implementing sensors to better understand user context and actions.
-Companion Mobile App: Creating an app for caregiver monitoring and control.
-Improved Battery Life: Optimizing power management for extended usage.
-Continuous Evolution: Leveraging feedback to refine emotional intelligence and conversational capabilities.
-🛠️ Getting Started
-Prerequisites
-Raspberry Pi 5 with Raspberry Pi OS installed
-Python 3.9+
-OpenCV 4.5+
-Web browser for emotion display (Chromium recommended)
-Modified RC car chassis with accessible control pins
-Raspberry Pi compatible camera module
-Bluetooth speaker
-Display screen (7" minimum recommended)
-Power bank with at least 10,000mAh capacity
-Installation
-bash
-# Clone the repository
+## 💡 Inspiration
+
+The silent struggles of neurodiverse children navigating a world that often feels overwhelming—and the quiet heartbreak of parents who long to help—led us to create SNOM.
+
+We envisioned a gentle buddy who always listens, never judges, and understands kids just the way they are.
+
+SNOM is born from **empathy**, built with **intention**, and powered by the belief that **every child deserves a friend who truly sees them.**
+
+---
+
+## ⚙️ What It Does
+
+SNOM is a smart, mobile, and empathetic robot that:
+
+- 🤝 Autonomously follows children using real-time computer vision for companionship and safety.
+- 📏 Maintains optimal conversation distance using dynamic calculations.
+- 🧠 Uses **Gemini 2.0 Flash** to engage in natural, mood-aware conversations.
+- 🎭 Visually displays emotions on a screen to encourage social understanding.
+- 🔊 Speaks using lifelike voice feedback powered by text-to-speech tech.
+- 🧭 Navigates independently to locate and follow users while avoiding obstacles.
+- 🌱 Helps children identify, express, and manage emotions through conversation and interaction.
+
+---
+
+## 🔧 How We Built It
+
+### 🧰 Hardware
+- **Raspberry Pi 5** – Brain of SNOM, coordinating vision, movement, and speech.
+- **Modified RC Car Chassis** – Provides smooth and flexible mobility.
+- **Camera Module** – Enables person detection and tracking using OpenCV.
+- **Bluetooth Speaker** – Provides natural voice feedback.
+- **Display Screen** – Shows SNOM’s emotional expressions.
+- **Power Bank (10,000mAh)** – Ensures extended runtime on the go.
+
+### 💻 Software
+- **Vision System** – Built with OpenCV for object tracking and real-time distance estimation.
+- **Motor Control** – Uses `RPI.GPIO` for movement commands.
+- **Conversation AI** – Integrated with **Gemini 2.0 Flash** for dynamic dialogue.
+- **Speech Output** – Handled via `pyttsx3` for engaging voice interaction.
+- **Emotion Display** – HTML/CSS/JS frontend served via Flask to display expressive emotions.
+
+---
+
+## 🤝 How TerpAI Helped Us
+
+- Fine-tuned GenAI models to support emotional awareness in conversations.
+- Built personalized child personas for meaningful, relatable interactions.
+- Helped us understand real-world needs of parents and children with autism.
+- Supported the development of an empathy-first solution.
+- Enhanced our business plan and future scalability roadmap.
+
+---
+
+## 🧗‍♂️ Challenges We Faced
+
+- 🔩 **Hardware Firsts** – Tackling hardware as CS students was a bold step!
+- 🔧 **Reverse Engineering** – Modifying an RC car without compromising its internals.
+- ⚡ **Power Optimization** – Managing multiple modules running concurrently.
+- 🧠 **Real-Time Logic** – Ensuring smooth decision-making and movement.
+- 🔈 **Audio Clarity** – Maintaining speech quality in different environments.
+
+---
+
+## ✅ Accomplishments
+
+- 🛠️ Fully reverse-engineered and repurposed an RC car for autonomous tracking.
+- 🤖 Integrated AI, speech, vision, and emotional expression into one cohesive system.
+- 🧠 Developed mood-based conversations powered by **Gemini 2.0 Flash**.
+- 💬 Built an engaging, empathetic tool that truly connects with children.
+- 👪 Created a product that gives peace of mind to parents while fostering growth in kids.
+
+---
+
+## 📚 What We Learned
+
+- How to merge software logic with real-world hardware mechanics.
+- Practical experience with real-time vision processing under constraints.
+- Human-robot interaction design and emotion-centered UX.
+- Power management and optimization techniques.
+- Most importantly: **empathy-first design transforms lives.**
+
+---
+
+## 🔮 What’s Next for SNOM
+
+- 🌍 **Global Reach** – Make SNOM accessible to families worldwide.
+- 🧠 **Advanced Personalization** – Adapt SNOM to unique personalities.
+- 👩‍⚕️ **Therapeutic Integration** – Partner with educators and therapists.
+- 📱 **Mobile App** – Let parents monitor and customize SNOM via a companion app.
+- 🔋 **Better Battery Life** – Optimize SNOM’s energy usage.
+- 🧠 **Smarter Conversations** – Continuously evolve emotional intelligence models.
+
+---
+
+## 🛠️ Getting Started
+
+### 📦 Prerequisites
+- Raspberry Pi 5 (with Raspberry Pi OS)
+- Python 3.9+
+- OpenCV 4.5+
+- Chromium browser (for emotion display)
+- RC car chassis (modified)
+- Compatible Pi camera module
+- Bluetooth speaker
+- Display screen (7"+ recommended)
+- Power bank (10,000mAh or higher)
+
+### 📥 Installation
+
+```bash
+# Clone the repo
 git clone https://github.com/your-username/companionbot.git
 
 # Navigate to the project directory
 cd companionbot
 
-# Install dependencies
+# Install required Python packages
 pip install -r requirements.txt
 
-# Configure your Gemini API key
+# Add your Gemini API key
 export GEMINI_API_KEY=your_api_key_here
 
 # Start the emotion display server
 python emotion_server.py &
 
-# Run the main robot control program
+# Run SNOM
 python companionbot.py
-Usage
-Basic Operation:
-
-Power on SNOM using the main switch on the chassis.
-Wait approximately 30 seconds for all systems to initialize.
-The emotion display will show a "Ready" face when operational.
-Place SNOM near the intended user, and he will autonomously detect and approach them.
-Engage in natural conversations with SNOM, who will respond via his speaker.
-Control Options:
-
-To temporarily pause autonomous movement while keeping conversation active:
-bash
-python companionbot.py --stationary
-To run in quiet mode (text-only conversations on display):
-bash
-python companionbot.py --quiet
-To run with debugging information displayed:
-bash
-python companionbot.py --debug
-🔗 Links
-GitHub Repository
-Demo Video
-Project Website
-📜 License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
-
-🙏 Acknowledgments
-Google: For providing access to the Gemini 2.0 Flash API.
-OpenCV Community: For computer vision libraries and resources.
-Raspberry Pi Foundation: For creating accessible computing platforms.
-Bitcamp Organizers and Sponsors: For the opportunity to develop this project.
-Families and Children: Who provided valuable feedback during testing phases.
-Does this comprehensive README file meet your expectations? Let me know if there are any additional adjustments or sections you'd like to include!
-

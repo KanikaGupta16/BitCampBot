@@ -1,4 +1,4 @@
-# CompanionBot
+# Your Friend STEVE
 
 ## 🚀 About
 CompanionBot is an AI-powered robotic companion built on a modified RC car platform that assists children with difficulties through engaging conversations and autonomous interaction.
